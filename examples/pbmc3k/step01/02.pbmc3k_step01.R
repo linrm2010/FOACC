@@ -101,3 +101,5 @@ dev.off()
 # names(new.cluster.ids) <- levels(pbmc.UMAP)
 # pbmc <- RenameIdents(pbmc.UMAP, new.cluster.ids)
 # DimPlot(pbmc.UMAP, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
+
+saveRDS(pbmc, file = "pbmc3k_step01.rds")
