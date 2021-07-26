@@ -44,3 +44,5 @@ ln -s ../Celegans.embryo.data_barcodes.tsv.gz barcodes.tsv.gz
 Celegans.embryo.data_features.tsv.gz
 Celegans.embryo.data_matrix.mtx.gz
 Celegans.embryo.data_barcodes.tsv.gz
+
+Performing analysis using R, which were shown in two detailed files (02.Cel_step01.R and 02.Cel_step02.R).
