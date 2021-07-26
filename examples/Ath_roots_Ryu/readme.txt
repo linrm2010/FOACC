@@ -27,6 +27,6 @@ ln -s ../matrix.mtx.gz matrix.mtx.gz
 ln -s ../genes.tsv.gz features.tsv.gz
 ln -s ../barcodes.tsv.gz barcodes.tsv.gz
 
-The matrix.mtx.gz is split into four files of 'matrix.mtx.gz.001', 'matrix.mtx.gz.002', 'matrix.mtx.gz.003' and 'matrix.mtx.gz.004' due to its bigger than 25 Mb for upload on Github.
+The matrix.mtx.gz is split into four files of 'matrix.mtx.gz.001', 'matrix.mtx.gz.002', 'matrix.mtx.gz.003' and 'matrix.mtx.gz.004' for it is bigger than 25 Mb for uploading on Github.
 
 3. Two R scripts ('02.AthRoot_step01.R' and '02.AthRoot_step02.R') will be used for analysis.
