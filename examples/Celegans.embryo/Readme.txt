@@ -39,3 +39,8 @@ cd step01
 ln -s ../Celegans.embryo.data_features.tsv.gz features.tsv.gz
 ln -s ../Celegans.embryo.data_matrix.mtx.gz matrix.mtx.gz
 ln -s ../Celegans.embryo.data_barcodes.tsv.gz barcodes.tsv.gz
+
+3. Using the three files for following analysis:
+Celegans.embryo.data_features.tsv.gz
+Celegans.embryo.data_matrix.mtx.gz
+Celegans.embryo.data_barcodes.tsv.gz
