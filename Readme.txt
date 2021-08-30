@@ -1,73 +1,9 @@
-Readme
+FOACC v1.0
 
-FOACC is a pipeline for improving single-cell RNA-sequencing (scRNA-seq) cell clustering. 
+FOACC is a pipeline for improving single-cell RNA-sequencing (scRNA-seq) cell clustering. The popular cell clustering methods (including Seurat, SC3, DIMM-SC) are implemented in the FOACC pipeline. 
 
-1. Required R packages
-(1) install BiocManager
-install.packages("BiocManager")
-# --- Please select a CRAN mirror for use in this session ---
-# Secure CRAN mirrors
-#  1: 0-Cloud [https]
-# Selection: 1
-(2) install Seurat
-library("BiocManager")
-BiocManager::install("Seurat")
-(3) install SC3
-BiocManager::install("SC3")
-(4) install DIMMSC
-BiocManager::install("devtools")
-library("devtools")
-install.packages("http://s3-us-west-2.amazonaws.com/10x.files/code/cellrangerRkit-1.1.0.tar.gz", repos=NULL)
-# during intallation of 'cellrangerRkit-1.1.0.tar.gz', some errors may be presented, such as: 
-# ERROR: dependencies ‘bit64’, ‘Rmisc’, ‘rhdf5’ are not available for package ‘cellrangerRkit’
-# To solve these error, install these related packages: 
-# BiocManager::install("bit64")
-# BiocManager::install("Rmisc")
-# BiocManager::install("rhdf5")
-install_github("wt2015-github/DIMMSC")
-(5) install dplyr
-BiocManager::install("dplyr")
-(6) install patchwork
-BiocManager::install("patchwork")
-(7) install SingleCellExperiment
-BiocManager::install("SingleCellExperiment")
-(8) install scater
-BiocManager::install("scater")
-(9) install Matrix
-BiocManager::install("Matrix")
-(10) install SeuratData
-devtools::install_github('satijalab/seurat-data')
-(11) install scales
-BiocManager::install("scales")
-(12) install phyclust
-BiocManager::install("phyclust")
+Protocols for running FOACC can be found in "FOACC v1.0 Protocols for performing analysis of six scRNA-seq data sets.pdf".
 
-2. Required Perl scripts
-calculate_adjusted_rand_index_score.pl
-calculate_normalized_mutual_information_score.pl
-calculate_purity_score.pl
-cell_cluster_change.pl
-change_10x_chromium_lib_sequenced_data_format.pl
-comparison_Seurat-SC3-DIMMSC.pl
-comparison_Seurat-SC3-DIMMSC.type.select.step01.pl
-comparison_Seurat-SC3-DIMMSC.type.select.step02.pl
-generate_matrix.pl
-generate_SC3-DIMMSC_Rscript.pl
-ID_from_cell_list.pl
-reformat_matrix.pl
-select_cells_by_cellID.pl
-transform_matrix.pl
+The flowchart of FOACC can be found in "The flowchart of FOACC.pdf".
 
-3. Required perl modules
-(1) Data::Dumper
-(2) FindBin
-(3) Getopt::Long
-(4) Math::Complex
-
-4. Protocols for performing analysis of six scRNA-seq data sets
-The protocol for human peripheral blood mononuclear cells
-The protocol for Caenorhabditis elegans embryonic cells
-The protocol for Arabidopsis thaliana roots
-The protocol for Arabidopsis thaliana leaves
-The protocol for rice roots
-The protocol for maize leaves
+Contact E-mail: linrm2010@163.com
