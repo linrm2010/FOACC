@@ -1,5 +1,7 @@
 Readme
 
+FOACC is a pipeline for improving single-cell RNA-sequencing (scRNA-seq) cell clustering. 
+
 1. Required R packages
 (1) install BiocManager
 install.packages("BiocManager")
